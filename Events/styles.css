@@ -1,0 +1,220 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to grow */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Added padding for better click area */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Highlight on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+.hero {
+    background-color: #003366;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0;
+}
+
+.hero p {
+    margin: 10px 0 20px;
+}
+
+.cta-button {
+    background-color: #00509e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.cta-button:hover {
+    background-color: #003366; /* Darker shade on hover */
+}
+
+/* Feature Styles */
+.features {
+    margin: 40px 0;
+}
+
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+}
+
+/* Testimonials Styles */
+.testimonials {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+.testimonial {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Call to Action Styles */
+.call-to-action {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .toggle-button {
+        display: block; /* Show toggle button on small screens */
+    }
+
+    nav {
+        display: none; /* Hide nav by default */
+        width: 100%;
+        position: absolute; /* Positioning for dropdown */
+        top: 60px; /* Below the header */
+        left: 0;
+        background-color: #003366; /* Match header color */
+        z-index: 1000; /* Ensure it appears above other content */
+    }
+
+    nav.active {
+        display: block; /* Show nav when active */
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .feature {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+}
+
+/* Events Page Styles */
+.event-list {
+    margin: 40px 0;
+}
+
+.event {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.event h3 {
+    margin: 0 0 10px;
+}
+
+.event p {
+    margin: 5px 0;
+}
+
+.event .cta-button {
+    display: inline-block;
+    margin-top: 10px;
+}
