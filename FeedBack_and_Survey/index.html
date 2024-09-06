@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Association Feedback & Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Government Engineering College</div>
+        <button class="toggle-button" id="toggle-button">
+            &#9776; <!-- Hamburger icon -->
+        </button>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Alumni Registration</a></li>
+                <li><a href="#">Donation Portal</a></li>
+                <li><a href="#">Networking Hub</a></li>
+                <li><a href="#">Job Portal</a></li>
+                <li><a href="#">Alumni Directory</a></li>
+                <li><a href="#">Success Stories</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Feedback & Surveys</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="feedback-form">
+            <h1>We Value Your Feedback!</h1>
+            <p>Your insights help us improve our Alumni Association.</p>
+            <form id="feedbackForm">
+                <div class="progress-bar">Step 1 of 3</div>
+                <h2>Personal Information (Optional)</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="graduationYear">Graduation Year:</label>
+                <select id="graduationYear" name="graduationYear">
+                    <option value="">Select Year</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <h2>Feedback Questions</h2>
+                <label>How satisfied are you with the Alumni Association's current offerings?</label>
+                <div class="rating">
+                    <input type="radio" id="satisfaction1" name="satisfaction" value="1">
+                    <label for="satisfaction1">1</label>
+                    <input type="radio" id="satisfaction2" name="satisfaction" value="2">
+                    <label for="satisfaction2">2</label>
+                    <input type="radio" id="satisfaction3" name="satisfaction" value="3">
+                    <label for="satisfaction3">3</label>
+                    <input type="radio" id="satisfaction4" name="satisfaction" value="4">
+                    <label for="satisfaction4">4</label>
+                    <input type="radio" id="satisfaction5" name="satisfaction" value="5">
+                    <label for="satisfaction5">5</label>
+                </div>
+
+                <label>What features do you find most valuable?</label>
+                <div class="checkboxes">
+                    <input type="checkbox" id="networking" name="features" value="Networking">
+                    <label for="networking">Networking</label>
+                    <input type="checkbox" id="jobPortal" name="features" value="Job Portal">
+                    <label for="jobPortal">Job Portal</label>
+                    <input type="checkbox" id="events" name="features" value="Events">
+                    <label for="events">Events</label>
+                    <input type="checkbox" id="donations" name="features" value="Donations">
+                    <label for="donations">Donations</label>
+                    <input type="checkbox" id="successStories" name="features" value="Success Stories">
+                    <label for="successStories">Success Stories</label>
+                    <input type="checkbox" id="other" name="features" value="Other">
+                    <label for="other">Other (please specify)</label>
+                </div>
+
+                <label for="improvements">What improvements would you like to see?</label>
+                <textarea id="improvements" name="improvements"></textarea>
+
+                <label>Would you be interested in participating in future alumni events?</label>
+                <div class="toggle">
+                    <input type="radio" id="yes" name="eventsInterest" value="Yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="eventsInterest" value="No">
+                    <label for="no">No</label>
+                </div>
+
+                <label for="comments">Any other suggestions or comments?</label>
+                <textarea id="comments" name="comments"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Thank you for your feedback!</p>
+        <p>Stay connected! Join our next alumni event.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
