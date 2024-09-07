@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Alumni Association{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">Government Engineering College</div>
+        <button class="toggle-button" id="toggle-button">
+            &#9776; <!-- Hamburger icon -->
+        </button>
+        <nav id="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/registration">Alumni Registration</a></li>
+                <li><a href="/donation">Donation Portal</a></li>
+                <li><a href="/networking">Networking Hub</a></li>
+                <li><a href="/job-portal">Job Portal</a></li>
+                <li><a href="/directory">Alumni Directory</a></li>
+                <li><a href="/success-stories">Success Stories</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/feedback">Feedback & Surveys</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Government Engineering College Alumni Association. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
