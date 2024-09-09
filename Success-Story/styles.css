@@ -1,17 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --base-clr: #fff; /* White background */
+    --line-clr: #000000; /* Black line color */
+    --header-bg: #003366; /* Header background color */
+    --text-clr: #ffffff; /* White text color */
+    --story-bg: #ffffff; /* Story background color */
+    --shadow-clr: rgba(0, 0, 0, 0.1); /* Shadow color */
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #003366;
-    color: white;
+    background-color: var(--header-bg);
+    color: var(--text-clr);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -28,7 +39,7 @@ header .logo {
 .toggle-button {
     background: none;
     border: none;
-    color: white;
+    color: var(--text-clr);
     font-size: 24px;
     cursor: pointer;
     display: none; /* Hidden by default */
@@ -50,7 +61,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--text-clr);
     text-decoration: none;
 }
 
@@ -60,8 +71,8 @@ main {
 }
 
 .hero {
-    background-color: #003366;
-    color: white;
+    background-color: var(--header-bg);
+    color: var(--text-clr);
     padding: 40px 20px;
     text-align: center;
 }
@@ -83,10 +94,10 @@ main {
 }
 
 .story {
-    background: white;
+    background: var(--story-bg);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px var(--shadow-clr);
     margin: 20px 0;
 }
 
@@ -102,13 +113,13 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #003366;
-    color: white;
+    background-color: var(--header-bg);
+    color: var(--text-clr);
 }
 
 .social-media a {
     margin: 0 10px;
-    color: white;
+    color: var(--text-clr);
     text-decoration: none;
 }
 
@@ -152,9 +163,5 @@ footer {
 
     .hero p {
         font-size: 16px;
-    }
-
-    .cta-button {
-        padding: 8px 16px;
     }
 }
