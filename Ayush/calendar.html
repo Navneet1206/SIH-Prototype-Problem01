@@ -4,9 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calendar</title>
-  <link rel="stylesheet" href="/Proto/CSS/style.css">
-  <link rel="stylesheet" href="/Proto/CSS/user.css">
+  <link rel="stylesheet" href="/Ayush/CSS/style.css">
+  <link rel="stylesheet" href="/Ayush/CSS/user.css">
   <script type="text/javascript" src="app.js" defer></script>
+  <style>
+    .alumni-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .alumni-card:hover {
+            transform: scale(1.05);
+        }
+        .alumni-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+  </style>
 </head>
 <body>
   <!-- ============common navbar to all=========== -->
@@ -76,10 +92,46 @@
   </nav>
 
   <main>
-    <div class="container">
-      <h2>Calendar</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis porro iure quaerat aliquam! Optio dolorum in eum provident, facilis error repellendus excepturi enim dolor deleniti adipisci consectetur doloremque, unde maiores odit sapiente. Atque ab necessitatibus laboriosam consequatur eius similique, ex dolorum eum eaque sequi id veritatis voluptates perspiciatis, cupiditate pariatur.</p>
-    </div>
+    <div class="user_section mt-5">
+      <div class="row">
+          <div class="col-md-4 user_section">
+              <div class="alumni-card">
+                  <img src="https://via.placeholder.com/300" alt="Alumni Image" class="alumni-img">
+                  <div class="p-3">
+                      <h5 class="card-title">John Doe</h5>
+                      <p class="card-text">Graduation Year: 2020</p>
+                      <p class="card-text">Degree: Bachelor of Science in Computer Science</p>
+                      <p class="card-text">Current Position: Software Engineer at XYZ Corp</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 user_section">
+              <div class="alumni-card">
+                  <img src="https://via.placeholder.com/300" alt="Alumni Image" class="alumni-img">
+                  <div class="p-3">
+                      <h5 class="card-title">Jane Smith</h5>
+                      <p class="card-text">Graduation Year: 2019</p>
+                      <p class="card-text">Degree: Bachelor of Arts in Business Administration</p>
+                      <p class="card-text">Current Position: Marketing Manager at ABC Inc</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 user_section">
+              <div class="alumni-card">
+                  <img src="https://via.placeholder.com/300" alt="Alumni Image" class="alumni-img">
+                  <div class="p-3">
+                      <h5 class="card-title">Michael Johnson</h5>
+                      <p class="card-text">Graduation Year: 2018</p>
+                      <p class="card-text">Degree: Master of Science in Data Science</p>
+                      <p class="card-text">Current Position: Data Analyst at DEF Ltd</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   -->
   </main>
 </body>
 </html>
