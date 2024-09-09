@@ -1,17 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --base-clr: #fff; /* White background */
+  --line-clr: #000000; /* Black line color */
+  --hover-clr: #bac3f1; /* Light hover color */
+  --text-clr: #000000; /* Black text color */
+  --accent-clr: #1016c5; /* Accent color */
+  --secondary-text-clr: #37393f; /* Secondary text color */
+  --header-bg: #003366; /* Header background color */
+  --cta-bg: #00509e; /* Call to action button background */
+  --cta-hover-bg: #003366; /* Call to action button hover background */
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #003366;
-    color: white;
+    background-color: var(--header-bg);
+    color: var(--base-clr);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -29,7 +43,7 @@ header .logo {
 .toggle-button {
     background: none;
     border: none;
-    color: white;
+    color: var(--base-clr);
     font-size: 24px;
     cursor: pointer;
     display: none; /* Hidden by default */
@@ -51,7 +65,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--base-clr);
     text-decoration: none;
     padding: 10px 15px; /* Added padding for better click area */
     transition: background-color 0.3s; /* Smooth transition */
@@ -67,8 +81,8 @@ main {
 }
 
 .hero {
-    background-color: #003366;
-    color: white;
+    background-color: var(--header-bg);
+    color: var(--base-clr);
     padding: 40px 20px;
     text-align: center;
 }
@@ -82,16 +96,20 @@ main {
 }
 
 .cta-button {
-    background-color: #00509e;
-    color: white;
+    background-color: var(--cta-bg);
+    color: var(--base-clr);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s; /* Smooth transition */
+    display: block;
+    width: 100%;
+    border: none;
+    cursor: pointer;
 }
 
 .cta-button:hover {
-    background-color: #003366; /* Darker shade on hover */
+    background-color: var(--cta-hover-bg); /* Darker shade on hover */
 }
 
 .features {
@@ -103,7 +121,7 @@ main {
 }
 
 .feature {
-    background: white;
+    background: var(--base-clr);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -135,13 +153,13 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #003366;
-    color: white;
+    background-color: var(--header-bg);
+    color: var(--base-clr);
 }
 
 .social-media a {
     margin: 0 10px;
-    color: white;
+    color: var(--base-clr);
     text-decoration: none;
 }
 
@@ -157,7 +175,7 @@ footer {
         position: absolute; /* Positioning for dropdown */
         top: 60px; /* Below the header */
         left: 0;
-        background-color: #003366; /* Match header color */
+        background-color: var(--header-bg); /* Match header color */
         z-index: 1000; /* Ensure it appears above other content */
     }
 
@@ -197,13 +215,12 @@ footer {
     }
 }
 
-
 /* Registration Form Styles */
 .registration-form {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background: white;
+    background: var(--base-clr);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -233,22 +250,6 @@ footer {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #00509e; /* Highlight border on focus */
+    border-color: var(--cta-bg); /* Highlight border on focus */
     outline: none; /* Remove default outline */
-}
-
-.cta-button {
-    display: block;
-    width: 100%;
-    background-color: #00509e;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-    background-color: #003366; /* Darker shade on hover */
 }
