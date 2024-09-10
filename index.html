@@ -1,18 +1,23 @@
+<!-- ==Write Code inside main and if make "section" then use class="user_section"== -->
+ <!-- ==if using div use class="container"== -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jobs</title>
-  <link rel="stylesheet" href="/Ayush/CSS/style.css">
-  <!-- <link rel="stylesheet" href="/Ayush/CSS/user.css"> -->
-  <link rel="stylesheet" href="/Ayush/CSS/jobb.css">
+  <title>Home</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/user.css">
+  <link rel="stylesheet" href="/CSS/swapper.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
   <script type="text/javascript" src="app.js" defer></script>
+
 </head>
 <body>
-    <!-- ============common navbar to all=========== -->
-  <nav id="sidebar">
+   <!-- ============common navbar to all=========== -->
+   <nav id="sidebar">
     <ul>
       
       <li>
@@ -109,121 +114,89 @@
     </ul>
   </nav>
 
-
   <main>
-     <div>
-    <h1>Job Portal</h1>
-    
-    <div class="search-bar">
-        <input type="text" id="search" placeholder="Search jobs...">
-        <button onclick="searchJobs()">Search</button>
+ 
+    <div class="_header">
+      <div class="_header-content">
+        <!-- <img src="logo.png" alt="Logo" class="logo"> -->
+        <h1 class="site-name">Stay Connected</h1>
+      </div>
     </div>
-    
-    <div class="post-job-form">
-        <h2>Post a Job</h2>
-        <form id="job-form">
-            <label for="title">Job Title:</label>
-            <input type="text" id="title" required>
-            
-            <label for="description">Job Description:</label>
-            <textarea id="description" required></textarea>
-            
-            <label for="location">Location:</label>
-            <input type="text" id="location" required>
-            
-            <button type="submit">Post Job</button>
-        </form>
-    </div>
-    <div class="cont">
-    
-    <div id="job-list" class="job-list">
-        </div>
 
-    </div>
+    <section class="hero user_section">
+      <div class="hero-content">
+        <h1>Welcome to the ABC University Association</h1>
+        <p>Our platform offers easy access to networking, career opportunities, and alumni events, helping you stay connected with the college and fellow graduates. Engage in mentorship, explore job openings, and support the college’s initiatives through our secure donation portal. Celebrate the achievements of our alumni and stay updated on upcoming events—all through our user-friendly web and web applications. Join us in strengthening and growing our alumni community. Like this</p>
+        <a href="#ABC_University" class="cta-button">Know More</a>
+      </div>
+      <div class="background-shape"></div>
+      <div class="background-shape background-shape2"></div>
+    </section>
+
+    <section id="get-started user_section" class="get-started">
+      <div class="user_section">
+        <h2>Get Started Today</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet nulla magna.</p>
+        <a href="#contact" class="cta-button">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- stories -->
+    <div class="container stories-container">
+     <div class="user_section success-story-heading"><h1>High-Flyers</h1></div>
+    <div class="swiper">
+      <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+              <div class="card-item swiper-slide">
+                  <img class="user-image" src="https://tse3.mm.bing.net/th?id=OIP.iOJ3d7QnoKo7X0GrBQf97gHaHa&pid=Api&P=0&h=180" alt="">
+                  <h2 class="user-name">Ayush Singh</h2>
+                  <p class="user-profession">Software Developer</p>
+                  <button class="message-button">Message</button>
+              </div>
+
+              <div class="card-item swiper-slide">
+                  <img class="user-image" src="https://tse3.mm.bing.net/th?id=OIP.iOJ3d7QnoKo7X0GrBQf97gHaHa&pid=Api&P=0&h=180" alt="">
+                  <h2 class="user-name">Navneet Singh</h2>
+                  <p class="user-profession">Game Developer</p>
+                  <button class="message-button">Message</button>
+              </div>
+
+              <div class="card-item swiper-slide">
+                  <img class="user-image" src="https://tse3.mm.bing.net/th?id=OIP.iOJ3d7QnoKo7X0GrBQf97gHaHa&pid=Api&P=0&h=180" alt="">
+                  <h2 class="user-name">Chetan sen</h2>
+                  <p class="user-profession">UI/UX Designer</p>
+                  <button class="message-button">Message</button>
+              </div>
+
+              <div class="card-item swiper-slide">
+                  <img class="user-image" src="https://tse3.mm.bing.net/th?id=OIP.iOJ3d7QnoKo7X0GrBQf97gHaHa&pid=Api&P=0&h=180" alt="">
+                  <h2 class="user-name">John Uikey</h2>
+                  <p class="user-profession">Android Developer</p>
+                  <button class="message-button">Message</button>
+              </div>
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+  </div>
 </div>
-<script >
-const jobs = [
-    {
-        title: "Software Engineer",
-        description: "Develop and maintain software applications. Experience with JavaScript, HTML, and CSS required.",
-        location: "New York, NY",
-
-    },
-    {
-        title: "Python Developer",
-        description: "Write and test Python code. Familiarity with Django or Flask is a plus.",
-        location: "San Francisco, CA",
-    
-    },
-    {
-        title: "DevOps Engineer",
-        description: "Manage and automate deployment processes. Experience with AWS and Docker required.",
-        location: "Austin, TX",
-       
-    },
-    {
-        title: "Cloud Architect",
-        description: "Design and implement cloud solutions. Expertise in cloud platforms like AWS or Azure needed.",
-        location: "Seattle, WA",
-        
-    },
-    {
-        title: "Cloud Computing Specialist",
-        description: "Consult on cloud infrastructure and services. Strong knowledge of cloud security practices.",
-        location: "Boston, MA",
-        
-    }
-];
-
-function displayJobs(jobList) {
-    const jobListContainer = document.getElementById('job-list');
-    jobListContainer.innerHTML = ''; 
-
-    jobList.forEach(job => {
-        const jobCard = document.createElement('div');
-        jobCard.className = 'job-card';
-        jobCard.innerHTML = `
-            <h2>${job.title}</h2>
-            <p>${job.description}</p>
-            <p class="location">${job.location}</p>
-        `;
-        jobListContainer.appendChild(jobCard);
-    });
-}
-
-function searchJobs() {
-    const query = document.getElementById('search').value.toLowerCase();
-    const filteredJobs = jobs.filter(job =>
-        job.title.toLowerCase().includes(query) ||
-        job.description.toLowerCase().includes(query) ||
-        job.location.toLowerCase().includes(query)
-    );
-    displayJobs(filteredJobs);  
-}
-
-function postJob(event) {
-    event.preventDefault();
-
-    const title = document.getElementById('title').value;
-    const description = document.getElementById('description').value;
-    const location = document.getElementById('location').value;
     
 
-    jobs.push({
-        title,
-        description,
-        location,
-    });
-
-    displayJobs(jobs);  
-    document.getElementById('job-form').reset(); 
-}
-
-document.getElementById('job-form').addEventListener('submit', postJob);
-displayJobs(jobs);
-</script>
+    <!-- upcoming -->
     
+
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/scripts/swaper.js"></script>
+  
   
 </body>
 </html>

@@ -4,15 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile</title>
-  <link rel="stylesheet" href="/Ayush/CSS/style.css">
-  <link rel="stylesheet" href="/Ayush/CSS/donation.css">
+  <title>Events</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/event.css">
   <script type="text/javascript" src="app.js" defer></script>
+  
 </head>
 
 <body>
-   <!-- ============common navbar to all=========== -->
-   <nav id="sidebar">
+
+    <!-- ============common navbar to all=========== -->
+  <nav id="sidebar">
     <ul>
       
       <li>
@@ -111,90 +113,66 @@
 
 
   <main>
-    <div class="main-content ">
-      <header class="head_er">
-        <h1>Dashboard</h1>
-        <div class="profile">
-          <p>alumni name</p>
-          <img src="004.webp" alt="Profile Picture">
-        </div>
-      </header>
+    
 
-      <section class="cards">
-        <div class="card">
-          <h3>Total Donations</h3>
-          <p>$25,000</p>
+    <section class="user_section">
+      <div class="cont">
+        <h1>Events</h1>
+        <div class="event-category">
+          <h2>Upcoming Events</h2>
+          <div class="event-card" onclick="showDetails('upcoming')">
+            <img src="https://via.placeholder.com/300x200" alt="Music Festival">
+            <h3>Music Festival</h3>
+            <p>Date: 2023-12-01</p>
+            <p>Join us for a day of music, food, and fun at the annual Music Festival!</p>
+          </div>
+          <div class="event-card" onclick="showDetails('upcoming')">
+            <img src="https://via.placeholder.com/300x200" alt="Art Exhibition">
+            <h3>Art Exhibition</h3>
+            <p>Date: 2023-12-15</p>
+            <p>Explore stunning artworks from local artists at our Art Exhibition.</p>
+          </div>
         </div>
-        <div class="card">
-          <h3>Active Projects</h3>
-          <p>8</p>
+        <div class="event-category">
+          <h2>Open Events</h2>
+          <div class="event-card onclick="showDetails('open')">
+            <img src="https://via.placeholder.com/300x200" alt="Community Cleanup">
+            <h3>Community Cleanup</h3>
+            <p>Date: 2023-11-20</p>
+            <p>Help us keep our community clean and beautiful. Join the cleanup!</p>
+          </div>
+          <div class="event-card" onclick="showDetails('open')">
+            <img src="https://via.placeholder.com/300x200" alt="Tech Meetup">
+            <h3>Tech Meetup</h3>
+            <p>Date: 2023-11-25</p>
+            <p>Network with tech enthusiasts and learn about the latest trends.</p>
+          </div>
         </div>
-        <div class="card">
-          <h3>Registered Users</h3>
-          <p>150</p>
-        </div>
-        <div class="card">
-          <h3>Pending Approvals</h3>
-          <p>4</p>
-        </div>
-      </section>
-      <div class="donate_type">
-        <h2>Recent Projects</h2>
-        <div class="donation-card-container">
-            <div class="donation-card">
-                <img src="https://media.istockphoto.com/id/1344779917/vector/medical-center-hospital-building-vector-design.jpg?s=1024x1024&w=is&k=20&c=ojXy3pSmAc3wR8hMkyybmjwQzYYxaAJkCphfYyrCt_0=" alt="Hospital Management System" class="event-image">
-                <h3>Hospital Management System</h3>
-                <p><a href="https://hscprojects.com/hospital-management-system-project/" target="_blank">View Details</a></p>
-                <input type="text" placeholder="Amount">
-                <button>Donate</button>
-            </div>
-            <div class="donation-card">
-                <img src="https://hls.harvard.edu/wp-content/uploads/2022/07/Culture-Fest-Image-1-1024x576-1.png" alt="Cultural Fest" class="event-image">
-                <h3>Cultural Fest</h3>
-                <p><a href="https://www.venuereport.com/roundups/22-celebrations-of-culture-from-around-the-world/" target="_blank">View Details</a></p>
-                <input type="text" placeholder="Amount">
-                <button>Donate</button>
-            </div>
-            <div class="donation-card">
-                <img src="https://techradiance.in/wp-content/uploads/2022/02/3d-render-robots-with-transmission-wheels_1048-5630.png.webp" alt="Robotics Workshop" class="event-image">
-                <h3>Robotics Workshop</h3>
-                <p><a href="https://alison.com/course/diploma-in-robotics?utm_source=bing&utm_medium=cpc&utm_campaign=531498932&utm_content=1352401840036340&utm_term=kwd-84526279420840:loc-90&msclkid=e28b701309391e76566216cdf3913a1b" target="_blank">View Details</a></p>
-                <input type="text" placeholder="Amount">
-                <button>Donate</button>
-            </div>
-        </div>
-      </div>
-      
-      <div class="donate_type">
-        <h2>Upcoming Projects</h2>
-        <div class="donation-card-container">
-            <div class="donation-card">
-                <img src="https://media.istockphoto.com/id/1344779917/vector/medical-center-hospital-building-vector-design.jpg?s=1024x1024&w=is&k=20&c=ojXy3pSmAc3wR8hMkyybmjwQzYYxaAJkCphfYyrCt_0=" alt="Hospital Management System" class="event-image">
-                <h3>Hospital Management System</h3>
-                <p><a href="https://hscprojects.com/hospital-management-system-project/" target="_blank">View Details</a></p>
-                <input type="text" placeholder="Amount">
-                <button>Donate</button>
-            </div>
-            <div class="donation-card">
-                <img src="https://hls.harvard.edu/wp-content/uploads/2022/07/Culture-Fest-Image-1-1024x576-1.png" alt="Cultural Fest" class="event-image">
-                <h3>Cultural Fest</h3>
-                <p><a href="https://www.venuereport.com/roundups/22-celebrations-of-culture-from-around-the-world/" target="_blank">View Details</a></p>
-                <input type="text" placeholder="Amount">
-                <button>Donate</button>
-            </div>
-            <div class="donation-card">
-                <img src="https://techradiance.in/wp-content/uploads/2022/02/3d-render-robots-with-transmission-wheels_1048-5630.png.webp" alt="Robotics Workshop" class="event-image">
-                <h3>Robotics Workshop</h3>
-                <p><a href="https://alison.com/course/diploma-in-robotics?utm_source=bing&utm_medium=cpc&utm_campaign=531498932&utm_content=1352401840036340&utm_term=kwd-84526279420840:loc-90&msclkid=e28b701309391e76566216cdf3913a1b" target="_blank">View Details</a></p>
-                <input type="text" placeholder="Amount">
-                <button>Donate</button>
-            </div>
+        <div class="event-category">
+          <h2>Closed Events</h2>
+          <div class="event-card" onclick="showDetails('closed')">
+            <img src="https://via.placeholder.com/300x200" alt="Charity Run">
+            <h3>Charity Run</h3>
+            <p>Date: 2023-10-10</p>
+            <p>Thank you for participating in our Charity Run to support local charities!</p>
+          </div>
+          <div class="event-card" onclick="showDetails('closed')">
+            <img src="https://via.placeholder.com/300x200" alt="Book Fair">
+            <h3>Book Fair</h3>
+            <p>Date: 2023-09-15</p>
+            <p>Discover new books and meet authors at our annual Book Fair.</p>
+          </div>
         </div>
       </div>
-      
-      
+    </section>
+
   </main>
+  <script>
+    function showDetails(eventType) {
+      alert(`You clicked on a ${eventType} event!`);
+    }
 
+  </script>
 </body>
 
 </html>

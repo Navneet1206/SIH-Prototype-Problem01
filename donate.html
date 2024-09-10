@@ -1,29 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alumini Directory</title>
-  <link rel="stylesheet" href="/Ayush/CSS/style.css">
-  <link rel="stylesheet" href="/Ayush/CSS/user.css">
+  <title>Profile</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/donation.css">
   <script type="text/javascript" src="app.js" defer></script>
-  <style>
-    .alumni-card {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.2s;
-        }
-        .alumni-card:hover {
-            transform: scale(1.05);
-        }
-        .alumni-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-  </style>
 </head>
+
 <body>
    <!-- ============common navbar to all=========== -->
    <nav id="sidebar">
@@ -123,47 +109,92 @@
     </ul>
   </nav>
 
+
   <main>
-    <div class="mt-5">
-      <div class="row">
-          <div class="col-md-4 user_section">
-              <div class="alumni-card">
-                  <img src="https://via.placeholder.com/300" alt="Alumni Image" class="alumni-img">
-                  <div class="p-3">
-                      <h5 class="card-title">John Doe</h5>
-                      <p class="card-text">Graduation Year: 2020</p>
-                      <p class="card-text">Degree: Bachelor of Science in Computer Science</p>
-                      <p class="card-text">Current Position: Software Engineer at XYZ Corp</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 user_section">
-              <div class="alumni-card">
-                  <img src="https://via.placeholder.com/300" alt="Alumni Image" class="alumni-img">
-                  <div class="p-3">
-                      <h5 class="card-title">Jane Smith</h5>
-                      <p class="card-text">Graduation Year: 2019</p>
-                      <p class="card-text">Degree: Bachelor of Arts in Business Administration</p>
-                      <p class="card-text">Current Position: Marketing Manager at ABC Inc</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 user_section">
-              <div class="alumni-card">
-                  <img src="https://via.placeholder.com/300" alt="Alumni Image" class="alumni-img">
-                  <div class="p-3">
-                      <h5 class="card-title">Michael Johnson</h5>
-                      <p class="card-text">Graduation Year: 2018</p>
-                      <p class="card-text">Degree: Master of Science in Data Science</p>
-                      <p class="card-text">Current Position: Data Analyst at DEF Ltd</p>
-                  </div>
-              </div>
-          </div>
+    <div class="main-content ">
+      <header class="head_er">
+        <h1>Dashboard</h1>
+        <div class="profile">
+          <p>alumni name</p>
+          <img src="004.webp" alt="Profile Picture">
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Total Donations</h3>
+          <p>$25,000</p>
+        </div>
+        <div class="card">
+          <h3>Active Projects</h3>
+          <p>8</p>
+        </div>
+        <div class="card">
+          <h3>Registered Users</h3>
+          <p>150</p>
+        </div>
+        <div class="card">
+          <h3>Pending Approvals</h3>
+          <p>4</p>
+        </div>
+      </section>
+      <div class="donate_type">
+        <h2>Recent Projects</h2>
+        <div class="donation-card-container">
+            <div class="donation-card">
+                <img src="https://media.istockphoto.com/id/1344779917/vector/medical-center-hospital-building-vector-design.jpg?s=1024x1024&w=is&k=20&c=ojXy3pSmAc3wR8hMkyybmjwQzYYxaAJkCphfYyrCt_0=" alt="Hospital Management System" class="event-image">
+                <h3>Hospital Management System</h3>
+                <p><a href="https://hscprojects.com/hospital-management-system-project/" target="_blank">View Details</a></p>
+                <input type="text" placeholder="Amount">
+                <button>Donate</button>
+            </div>
+            <div class="donation-card">
+                <img src="https://hls.harvard.edu/wp-content/uploads/2022/07/Culture-Fest-Image-1-1024x576-1.png" alt="Cultural Fest" class="event-image">
+                <h3>Cultural Fest</h3>
+                <p><a href="https://www.venuereport.com/roundups/22-celebrations-of-culture-from-around-the-world/" target="_blank">View Details</a></p>
+                <input type="text" placeholder="Amount">
+                <button>Donate</button>
+            </div>
+            <div class="donation-card">
+                <img src="https://techradiance.in/wp-content/uploads/2022/02/3d-render-robots-with-transmission-wheels_1048-5630.png.webp" alt="Robotics Workshop" class="event-image">
+                <h3>Robotics Workshop</h3>
+                <p><a href="https://alison.com/course/diploma-in-robotics?utm_source=bing&utm_medium=cpc&utm_campaign=531498932&utm_content=1352401840036340&utm_term=kwd-84526279420840:loc-90&msclkid=e28b701309391e76566216cdf3913a1b" target="_blank">View Details</a></p>
+                <input type="text" placeholder="Amount">
+                <button>Donate</button>
+            </div>
+        </div>
       </div>
-  </div>
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   -->
+      
+      <div class="donate_type">
+        <h2>Upcoming Projects</h2>
+        <div class="donation-card-container">
+            <div class="donation-card">
+                <img src="https://media.istockphoto.com/id/1344779917/vector/medical-center-hospital-building-vector-design.jpg?s=1024x1024&w=is&k=20&c=ojXy3pSmAc3wR8hMkyybmjwQzYYxaAJkCphfYyrCt_0=" alt="Hospital Management System" class="event-image">
+                <h3>Hospital Management System</h3>
+                <p><a href="https://hscprojects.com/hospital-management-system-project/" target="_blank">View Details</a></p>
+                <input type="text" placeholder="Amount">
+                <button>Donate</button>
+            </div>
+            <div class="donation-card">
+                <img src="https://hls.harvard.edu/wp-content/uploads/2022/07/Culture-Fest-Image-1-1024x576-1.png" alt="Cultural Fest" class="event-image">
+                <h3>Cultural Fest</h3>
+                <p><a href="https://www.venuereport.com/roundups/22-celebrations-of-culture-from-around-the-world/" target="_blank">View Details</a></p>
+                <input type="text" placeholder="Amount">
+                <button>Donate</button>
+            </div>
+            <div class="donation-card">
+                <img src="https://techradiance.in/wp-content/uploads/2022/02/3d-render-robots-with-transmission-wheels_1048-5630.png.webp" alt="Robotics Workshop" class="event-image">
+                <h3>Robotics Workshop</h3>
+                <p><a href="https://alison.com/course/diploma-in-robotics?utm_source=bing&utm_medium=cpc&utm_campaign=531498932&utm_content=1352401840036340&utm_term=kwd-84526279420840:loc-90&msclkid=e28b701309391e76566216cdf3913a1b" target="_blank">View Details</a></p>
+                <input type="text" placeholder="Amount">
+                <button>Donate</button>
+            </div>
+        </div>
+      </div>
+      
+      
   </main>
+
 </body>
+
 </html>
