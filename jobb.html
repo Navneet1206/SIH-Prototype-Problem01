@@ -45,7 +45,7 @@
         <ul class="sub-menu">
           <div>
             <li class="active"><a href="jobb.html">Post Job</a></li>
-            <li><a href="#">Search Job</a></li>
+            <li><a href="search_job.html">Search Job</a></li>
             <!-- <li><a href="#">Project</a></li> -->
           </div>
         </ul>
@@ -112,13 +112,7 @@
 
   <main>
      <div>
-    <h1>Job Portal</h1>
-    
-    <div class="search-bar">
-        <input type="text" id="search" placeholder="Search jobs...">
-        <button onclick="searchJobs()">Search</button>
-    </div>
-    
+    <h1>Job Portal</h1> 
     <div class="post-job-form">
         <h2>Post a Job</h2>
         <form id="job-form">
@@ -149,30 +143,6 @@ const jobs = [
         location: "New York, NY",
 
     },
-    {
-        title: "Python Developer",
-        description: "Write and test Python code. Familiarity with Django or Flask is a plus.",
-        location: "San Francisco, CA",
-    
-    },
-    {
-        title: "DevOps Engineer",
-        description: "Manage and automate deployment processes. Experience with AWS and Docker required.",
-        location: "Austin, TX",
-       
-    },
-    {
-        title: "Cloud Architect",
-        description: "Design and implement cloud solutions. Expertise in cloud platforms like AWS or Azure needed.",
-        location: "Seattle, WA",
-        
-    },
-    {
-        title: "Cloud Computing Specialist",
-        description: "Consult on cloud infrastructure and services. Strong knowledge of cloud security practices.",
-        location: "Boston, MA",
-        
-    }
 ];
 
 function displayJobs(jobList) {
