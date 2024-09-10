@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.donation-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.donation-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.donation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.donation-card h3 {
+    margin: 10px 0;
+}
+
+.donation-card p {
+    margin: 10px 0;
+}
+
+.donation-card input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.donation-card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donation-card button:hover {
+    background-color: #218838;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 0px;
+   
+    background-color: #f8f9fa;
+   
+}
+
+.head_er {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.head_er h1 {
+    margin: 0;
+}
+
+.head_er .profile {
+    display: flex;
+    align-items: center;
+}
+
+.head_er .profile p {
+    margin: 0 10px 0 0;
+}
+
+.head_er .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Card Styles */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+    width: 22%;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 10px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Table Section Styles */
+/* .table-section {
+    margin: 20px 0;
+} */
+
+h2 {
+    margin-bottom: 20px;
+   text-align: center;
+}
+
+.donate_type{
+    margin: 20px 0px 20px px;
+}
+
+
+@media(max-width: 800px){
+
+    .cards{
+        display: block;
+    }
+    .card{
+        width: 100%;
+    }
+    .head_er{
+        display: block;
+        
+    }
+    .profile{
+        margin-top: 1rem;
+        margin-left: 50%;
+    }
+}
