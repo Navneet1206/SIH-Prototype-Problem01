@@ -1,0 +1,99 @@
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px; /* Gap below the h1 element */
+}
+
+/* Filter section styling */
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.filter-section label {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.filter-section select {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 1rem;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid #1a1a2b;
+}
+
+/* Alumni card grid view styling */
+#alumni-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.alumni-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 320px; /* Fixed height to accommodate button positioning */
+}
+
+.alumni-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Alumni image styling */
+.alumni-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+}
+
+.alumni-details {
+    text-align: center;
+}
+
+.alumni-details h4 {
+    margin: 0;
+    color: #007BFF;
+    font-size: 1.5rem;
+}
+
+.alumni-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Message button styling inside the card */
+.message-btn {
+    background-color: #f0f4f8; /* Light color for professional look */
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.message-btn:hover {
+    color: #fff;
+    background-color: #5c7792;
+}

@@ -469,6 +469,7 @@ footer {
   padding: 40px 20px;
   text-align: center;
   border-top: 2px solid var(--line-clr);
+  margin-top: 2rem;
 }
 
 .footer-container {

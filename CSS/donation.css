@@ -20,6 +20,19 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* addded by ayush */
+.donation-card a{
+    text-decoration: none;
+    color: var(--accent-clr);
+    transition: 0.2s ease;
+}
+
+.donation-card a:hover{
+    color: deepskyblue;
+    /* background-color: rgb(204, 238, 238); */
+    border-radius: 6px;
+}
+
 .donation-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
