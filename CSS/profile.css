@@ -1,0 +1,136 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--base-clr);
+    border: 1px solid var(--line-clr);
+    border-radius: 1em;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--line-clr);
+  }
+  
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    margin-left: 2rem;
+  }
+  
+  .profile-name {
+    font-size: 2rem;
+    color: var(--accent-clr);
+  }
+  
+  .profile-title, .profile-location {
+    font-size: 1.2rem;
+    color: var(--secondary-text-clr);
+  }
+  
+  .profile-body {
+    width: 100%;
+  }
+  
+  .about-section, .education-section, .experience-section, .skills-section, .portfolio-section, .social-links-section {
+    margin-top: 2rem;
+  }
+  
+  h2 {
+    color: var(--accent-clr);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p, ul {
+    color: var(--secondary-text-clr);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .skills span {
+    background-color: var(--hover-clr);
+    color: var(--text-clr);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .portfolio-item {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-clr);
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-links a {
+    color: var(--accent-clr);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent-clr);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    background-color: var(--hover-clr);
+    color: var(--text-clr);
+  }
+  @media (max-width: 768px) {
+    .profile-header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-info {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+  

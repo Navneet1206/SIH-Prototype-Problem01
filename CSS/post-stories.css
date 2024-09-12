@@ -1,0 +1,115 @@
+/* Form Container */
+.container {
+    border: 1px solid var(--line-clr);
+    border-radius: 1em;
+    padding: min(3em, 15%);
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: var(--accent-clr);
+    margin-bottom: 1.5rem;
+  }
+  
+  p {
+    color: var(--secondary-text-clr);
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Group Styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 1rem;
+    color: var(--text-clr);
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--line-clr);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--base-clr);
+    color: var(--text-clr);
+  }
+  
+  input[type="file"] {
+    padding: 5px;
+    font-size: 1rem;
+    background-color: var(--base-clr);
+    color: var(--text-clr);
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background-color: var(--accent-clr);
+    color: var(--base-clr);
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--hover-clr);
+    transform: translateY(-3px);
+  }
+  
+  .success-stories-display {
+    margin-top: 2rem;
+  }
+  
+  .story {
+    border: 1px solid var(--line-clr);
+    border-radius: 1em;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .story h3 {
+    color: var(--accent-clr);
+    margin-bottom: 0.5rem;
+  }
+  
+  .story p {
+    margin-bottom: 1rem;
+    color: var(--secondary-text-clr);
+  }
+  
+  .story img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    margin-top: 1rem;
+  }
+  
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 2em 1.5em;
+    }
+  
+    h2 {
+      font-size: 1.75rem;
+    }
+    .story {
+        padding: 1rem;
+      }
+  }
+  

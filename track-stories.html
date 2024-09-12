@@ -6,10 +6,9 @@
  <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Profile</title>
+   <title>Track Success Stories</title>
    <link rel="stylesheet" href="/CSS/style.css">
-   <link rel="stylesheet" href="/CSS/profile.css">
-   
+  <link rel="stylesheet" href="/CSS/track-story.css">
    <script type="text/javascript" src="app.js" defer></script>
  
  </head>
@@ -70,28 +69,28 @@
        </li>
  
        <li>
-         <button onclick=toggleSubMenu(this) class="dropdown-btn">
+         <button onclick=toggleSubMenu(this) class="dropdown-btn active">
            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-60q-63 0-106.5-43.5T330-210q0-52 31-91.5t79-53.5v-85H200v-160H100v-280h280v280H280v80h400v-85q-48-14-79-53.5T570-750q0-63 43.5-106.5T720-900q63 0 106.5 43.5T870-750q0 52-31 91.5T760-605v165H520v85q48 14 79 53.5t31 91.5q0 63-43.5 106.5T480-60Zm240-620q29 0 49.5-20.5T790-750q0-29-20.5-49.5T720-820q-29 0-49.5 20.5T650-750q0 29 20.5 49.5T720-680Zm-540 0h120v-120H180v120Zm300 540q29 0 49.5-20.5T550-210q0-29-20.5-49.5T480-280q-29 0-49.5 20.5T410-210q0 29 20.5 49.5T480-140ZM240-740Zm480-10ZM480-210Z"/></svg>  
            <span>Success Stories</span>
            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
          </button>
          <ul class="sub-menu">
            <div>
-             <li><a href="#">Post Success Stories</a></li>
-             <li><a href="#">Track Success Stories</a></li>
+             <li class="deactive"><a href="post-success-stories.html">Post Success Stories</a></li>
+             <li class="active"><a href="track-stories.html">Track Success Stories</a></li>
            </div>
          </ul>
        </li>
        <li>
-         <button onclick=toggleSubMenu(this) class="dropdown-btn active">
+         <button onclick=toggleSubMenu(this) class="dropdown-btn">
            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg>
            <span>More</span>
            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
          </button>
          <ul class="sub-menu">
            <div>
-             <li class="deactive"><a href="Events.html">Events</a></li>
-             <li class="active"><a href="#">Profile</a></li>
+             <li><a href="Events.html">Events</a></li>
+             <li><a href="profile.html">Profile</a></li>
            </div>
          </ul>
        </li>
@@ -113,107 +112,16 @@
    </nav>
  
    <main>
-    <div class="profile-container">
-      <!-- Profile Header -->
-      <div class="profile-header">
-        <div class="profile-image">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIq5SjiZzvoZEvd_G5tgEpGBgvPuRn2R52AQ&s" alt="User Profile Picture">
-        </div>
-        <div class="profile-info">
-          <h1 class="profile-name">John Doe</h1>
-          <p class="profile-title">Full Stack Developer</p>
-          <p class="profile-location"><strong>Location:</strong> New York, USA</p>
-        </div>
-      </div>
-    
-      <!-- Profile Body -->
-      <div class="profile-body">
-        
-        <!-- About Section -->
-        <section class="about-section">
-          <h2>About</h2>
-          <p>John Doe is a passionate Full Stack Developer with over 5 years of experience in building web applications. He specializes in React, Node.js, and MongoDB. John is always eager to learn new technologies and continuously strives to enhance his skills.</p>
-        </section>
-    
-        <!-- Education Section -->
-        <section class="education-section">
-          <h2>Education</h2>
-          <ul>
-            <li><strong>B.Sc. in Computer Science</strong>, University of California, 2015-2019</li>
-            <li><strong>M.Sc. in Software Engineering</strong>, MIT, 2019-2021</li>
-          </ul>
-        </section>
-    
-        <!-- Experience Section -->
-        <section class="experience-section">
-          <h2>Experience</h2>
-          <ul>
-            <li><strong>Senior Full Stack Developer</strong>, TechCorp (2021 - Present)
-              <ul>
-                <li>Lead a team of developers to build scalable web applications using MERN stack.</li>
-                <li>Improved application performance by 30% through optimized database queries and code refactoring.</li>
-              </ul>
-            </li>
-            <li><strong>Software Developer</strong>, WebDev Studio (2019 - 2021)
-              <ul>
-                <li>Developed user-friendly interfaces and backend systems for e-commerce platforms.</li>
-                <li>Collaborated with cross-functional teams to deliver high-quality software.</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-    
-        <!-- Skills Section -->
-        <section class="skills-section">
-          <h2>Skills</h2>
-          <div class="skills">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
-            <span>Git</span>
-            <span>Docker</span>
-          </div>
-        </section>
-    
-        <!-- Portfolio Section -->
-        <section class="portfolio-section">
-          <h2>Portfolio</h2>
-          <div class="portfolio">
-            <a href="https://example.com" target="_blank" class="portfolio-item">
-              <img src="https://via.placeholder.com/300" alt="Project 1">
-              <p>Project 1 - E-commerce Platform</p>
-            </a>
-            <a href="https://example.com" target="_blank" class="portfolio-item">
-              <img src="https://via.placeholder.com/300" alt="Project 2">
-              <p>Project 2 - Task Management App</p>
-            </a>
-            <a href="https://example.com" target="_blank" class="portfolio-item">
-              <img src="https://via.placeholder.com/300" alt="Project 3">
-              <p>Project 3 - Social Networking App</p>
-            </a>
-          </div>
-        </section>
-    
-        <!-- Social Links Section -->
-        <section class="social-links-section">
-          <h2>Social Links</h2>
-          <div class="social-links">
-            <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
-            <a href="https://github.com/johndoe" target="_blank">GitHub</a>
-            <a href="https://twitter.com/johndoe" target="_blank">Twitter</a>
-          </div>
-        </section>
-        
-      </div>
+    <div class="_header-content">
+        <h1 class="site-name">Track Success Stories</h1>
+      <input type="text" id="search-bar" placeholder="Search success stories..." />
     </div>
-    
-    
-    
-    
-    <!-- upcoming -->
+      <section id="success-stories" class="stories-section">
+        <!-- Success stories will be injected here via JavaScript -->
+      </section>
+
+
+     <!-- upcoming -->
      <footer>
        <div class="footer-container">
          <div class="footer-content">
@@ -246,6 +154,77 @@
      
    </main>
    
+   
+   <script>
+
+    // Mock JSON data for success stories
+const successStories = [
+  {
+    fullName: 'John Doe',
+    email: 'john@example.com',
+    graduationYear: 2020,
+    story: 'After graduating in 2020, I started my own tech company...',
+    image: 'https://via.placeholder.com/100'
+  },
+  {
+    fullName: 'Jane Smith',
+    email: 'jane@example.com',
+    graduationYear: 2019,
+    story: 'I joined a Fortune 500 company and now lead a team of developers...',
+    image: 'https://via.placeholder.com/100'
+  },
+  {
+    fullName: 'Michael Lee',
+    email: 'michael@example.com',
+    graduationYear: 2018,
+    story: 'I pursued a career in AI and now work at Google...',
+    image: 'https://via.placeholder.com/100'
+  },
+  // Add more stories here...
+];
+
+// Function to display success stories
+function displayStories(stories) {
+  const storiesSection = document.getElementById('success-stories');
+  storiesSection.innerHTML = ''; // Clear previous content
+  
+  if (stories.length === 0) {
+    storiesSection.innerHTML = '<p>No stories found.</p>';
+    return;
+  }
+
+  stories.forEach(story => {
+    const storyCard = `
+      <div class="story-card">
+        <img src="${story.image}" alt="${story.fullName}" />
+        <h3>${story.fullName}</h3>
+        <p>Graduation Year: ${story.graduationYear}</p>
+        <p>${story.story}</p>
+      </div>
+    `;
+    storiesSection.innerHTML += storyCard;
+  });
+}
+
+// Initial display of all stories
+displayStories(successStories);
+
+// Search functionality
+document.getElementById('search-bar').addEventListener('input', (e) => {
+  const searchTerm = e.target.value.toLowerCase();
+  
+  const filteredStories = successStories.filter(story => {
+    return (
+      story.fullName.toLowerCase().includes(searchTerm) ||
+      story.graduationYear.toString().includes(searchTerm) ||
+      story.story.toLowerCase().includes(searchTerm)
+    );
+  });
+
+  displayStories(filteredStories);
+});
+
+   </script>
    
  </body>
  </html>

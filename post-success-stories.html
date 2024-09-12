@@ -6,10 +6,9 @@
  <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Profile</title>
+   <title>Post-Succes-Stories</title>
    <link rel="stylesheet" href="/CSS/style.css">
-   <link rel="stylesheet" href="/CSS/profile.css">
-   
+    <link rel="stylesheet" href="/CSS/post-stories.css">
    <script type="text/javascript" src="app.js" defer></script>
  
  </head>
@@ -70,28 +69,28 @@
        </li>
  
        <li>
-         <button onclick=toggleSubMenu(this) class="dropdown-btn">
+         <button onclick=toggleSubMenu(this) class="dropdown-btn active">
            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-60q-63 0-106.5-43.5T330-210q0-52 31-91.5t79-53.5v-85H200v-160H100v-280h280v280H280v80h400v-85q-48-14-79-53.5T570-750q0-63 43.5-106.5T720-900q63 0 106.5 43.5T870-750q0 52-31 91.5T760-605v165H520v85q48 14 79 53.5t31 91.5q0 63-43.5 106.5T480-60Zm240-620q29 0 49.5-20.5T790-750q0-29-20.5-49.5T720-820q-29 0-49.5 20.5T650-750q0 29 20.5 49.5T720-680Zm-540 0h120v-120H180v120Zm300 540q29 0 49.5-20.5T550-210q0-29-20.5-49.5T480-280q-29 0-49.5 20.5T410-210q0 29 20.5 49.5T480-140ZM240-740Zm480-10ZM480-210Z"/></svg>  
            <span>Success Stories</span>
            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
          </button>
          <ul class="sub-menu">
            <div>
-             <li><a href="#">Post Success Stories</a></li>
-             <li><a href="#">Track Success Stories</a></li>
+             <li class="active"><a href="#">Post Success Stories</a></li>
+             <li class="deactive"><a href="#">Track Success Stories</a></li>
            </div>
          </ul>
        </li>
        <li>
-         <button onclick=toggleSubMenu(this) class="dropdown-btn active">
+         <button onclick=toggleSubMenu(this) class="dropdown-btn">
            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg>
            <span>More</span>
            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
          </button>
          <ul class="sub-menu">
            <div>
-             <li class="deactive"><a href="Events.html">Events</a></li>
-             <li class="active"><a href="#">Profile</a></li>
+             <li><a href="Events.html">Events</a></li>
+             <li><a href="#">Profile</a></li>
            </div>
          </ul>
        </li>
@@ -113,107 +112,56 @@
    </nav>
  
    <main>
-    <div class="profile-container">
-      <!-- Profile Header -->
-      <div class="profile-header">
-        <div class="profile-image">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIq5SjiZzvoZEvd_G5tgEpGBgvPuRn2R52AQ&s" alt="User Profile Picture">
-        </div>
-        <div class="profile-info">
-          <h1 class="profile-name">John Doe</h1>
-          <p class="profile-title">Full Stack Developer</p>
-          <p class="profile-location"><strong>Location:</strong> New York, USA</p>
-        </div>
-      </div>
-    
-      <!-- Profile Body -->
-      <div class="profile-body">
-        
-        <!-- About Section -->
-        <section class="about-section">
-          <h2>About</h2>
-          <p>John Doe is a passionate Full Stack Developer with over 5 years of experience in building web applications. He specializes in React, Node.js, and MongoDB. John is always eager to learn new technologies and continuously strives to enhance his skills.</p>
+  
+   
+        <!-- Success Story Submission Section -->
+        <section class="container">
+          <h2>Share Your Success Story</h2>
+          <p>We would love to hear how your journey has evolved after graduation. Share your success story with the community to inspire others and showcase your achievements.</p>
+      
+          <form class="success-story-form" action="#" method="POST">
+            <!-- Full Name Input -->
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="full-name" required placeholder="Enter your full name">
+            </div>
+      
+            <!-- Email Input -->
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+      
+            <!-- Graduation Year Input -->
+            <div class="form-group">
+              <label for="graduation-year">Graduation Year</label>
+              <input type="number" id="graduation-year" name="graduation-year" required placeholder="Enter your graduation year">
+            </div>
+      
+            <!-- Success Story Input -->
+            <div class="form-group">
+              <label for="success-story">Your Success Story</label>
+              <textarea id="success-story" name="success-story" rows="6" required placeholder="Tell us about your success"></textarea>
+            </div>
+      
+            <!-- Upload Image Input -->
+            <div class="form-group">
+              <label for="upload-image">Upload a Related Image</label>
+              <input type="file" id="upload-image" name="upload-image" accept="image/*">
+            </div>
+      
+            <!-- Submit Button -->
+            <div class="form-group">
+              <button type="submit" class="submit-btn">Submit Story</button>
+            </div>
+          </form>
         </section>
-    
-        <!-- Education Section -->
-        <section class="education-section">
-          <h2>Education</h2>
-          <ul>
-            <li><strong>B.Sc. in Computer Science</strong>, University of California, 2015-2019</li>
-            <li><strong>M.Sc. in Software Engineering</strong>, MIT, 2019-2021</li>
-          </ul>
-        </section>
-    
-        <!-- Experience Section -->
-        <section class="experience-section">
-          <h2>Experience</h2>
-          <ul>
-            <li><strong>Senior Full Stack Developer</strong>, TechCorp (2021 - Present)
-              <ul>
-                <li>Lead a team of developers to build scalable web applications using MERN stack.</li>
-                <li>Improved application performance by 30% through optimized database queries and code refactoring.</li>
-              </ul>
-            </li>
-            <li><strong>Software Developer</strong>, WebDev Studio (2019 - 2021)
-              <ul>
-                <li>Developed user-friendly interfaces and backend systems for e-commerce platforms.</li>
-                <li>Collaborated with cross-functional teams to deliver high-quality software.</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-    
-        <!-- Skills Section -->
-        <section class="skills-section">
-          <h2>Skills</h2>
-          <div class="skills">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
-            <span>Git</span>
-            <span>Docker</span>
-          </div>
-        </section>
-    
-        <!-- Portfolio Section -->
-        <section class="portfolio-section">
-          <h2>Portfolio</h2>
-          <div class="portfolio">
-            <a href="https://example.com" target="_blank" class="portfolio-item">
-              <img src="https://via.placeholder.com/300" alt="Project 1">
-              <p>Project 1 - E-commerce Platform</p>
-            </a>
-            <a href="https://example.com" target="_blank" class="portfolio-item">
-              <img src="https://via.placeholder.com/300" alt="Project 2">
-              <p>Project 2 - Task Management App</p>
-            </a>
-            <a href="https://example.com" target="_blank" class="portfolio-item">
-              <img src="https://via.placeholder.com/300" alt="Project 3">
-              <p>Project 3 - Social Networking App</p>
-            </a>
-          </div>
-        </section>
-    
-        <!-- Social Links Section -->
-        <section class="social-links-section">
-          <h2>Social Links</h2>
-          <div class="social-links">
-            <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
-            <a href="https://github.com/johndoe" target="_blank">GitHub</a>
-            <a href="https://twitter.com/johndoe" target="_blank">Twitter</a>
-          </div>
-        </section>
-        
-      </div>
-    </div>
-    
-    
-    
-    
-    <!-- upcoming -->
+        <section class="container success-stories-display">
+            <h2>Our Alumni Success Stories</h2>
+            <!-- Stories will be injected here dynamically by JavaScript -->
+          </section>          
+      
+     <!-- upcoming -->
      <footer>
        <div class="footer-container">
          <div class="footer-content">
@@ -246,6 +194,87 @@
      
    </main>
    
+
+   <script>
+    // Simulate localStorage for demo purposes (actual storage can be backend DB)
+    const getSuccessStories = () => {
+      const stories = localStorage.getItem('successStories');
+      return stories ? JSON.parse(stories) : [];
+    };
+  
+    const saveSuccessStory = (story) => {
+      const stories = getSuccessStories();
+      stories.push(story);
+      localStorage.setItem('successStories', JSON.stringify(stories));
+    };
+  
+    // Function to handle form submission
+    document.querySelector('.success-story-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      
+      const fullName = document.querySelector('#full-name').value;
+      const email = document.querySelector('#email').value;
+      const graduationYear = document.querySelector('#graduation-year').value;
+      const story = document.querySelector('#success-story').value;
+      const uploadImage = document.querySelector('#upload-image').files[0];
+  
+      const reader = new FileReader();
+  
+      reader.onloadend = function () {
+        // Create a story object
+        const successStory = {
+          fullName,
+          email,
+          graduationYear,
+          story,
+          image: reader.result
+        };
+  
+        // Save story to local storage or send to the backend server
+        saveSuccessStory(successStory);
+  
+        // Clear form
+        document.querySelector('.success-story-form').reset();
+  
+        // Display success story
+        displaySuccessStories();
+      };
+  
+      if (uploadImage) {
+        reader.readAsDataURL(uploadImage);
+      } else {
+        reader.onloadend();
+      }
+    });
+  
+    // Function to display success stories on the page
+    function displaySuccessStories() {
+      const storiesContainer = document.querySelector('.success-stories-display');
+      storiesContainer.innerHTML = ''; // Clear existing content
+  
+      const stories = getSuccessStories();
+      stories.forEach(story => {
+        const storyDiv = document.createElement('div');
+        storyDiv.classList.add('story');
+  
+        // Create HTML for each story
+        storyDiv.innerHTML = `
+          <h3>${story.fullName} - Class of ${story.graduationYear}</h3>
+          <p>${story.story}</p>
+          ${story.image ? `<img src="${story.image}" alt="Success Story Image" />` : ''}
+        `;
+  
+        // Append story to the display container
+        storiesContainer.appendChild(storyDiv);
+      });
+    }
+  
+    // On page load, display success stories
+    window.onload = function () {
+      displaySuccessStories();
+    };
+  </script>
+  
    
  </body>
  </html>
