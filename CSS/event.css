@@ -2,17 +2,49 @@
     margin: auto;
   }
 
-  h1 {
+  .heading_1 {
     text-align: center;
-    color: #333;
+    color: #7554ec;
+    font-size: 2rem;
   }
+
+  body {
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+.animated-gradient-underline {
+    position: relative; /* Positioning context for the pseudo-element */
+    display: inline-block; /* Ensures the underline only spans the text */
+    color: #333; /* Text color */
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.animated-gradient-underline::after {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Positioning the underline */
+    left: 0; /* Start from the left */
+    bottom: 0; /* Position at the bottom of the text */
+    width: 100%; /* Full width of the text */
+    height: 4px; /* Thickness of the underline */
+    background: linear-gradient(90deg, #ff007f, #ff7f00); /* Gradient color */
+    transform: scaleX(0); /* Start with no width */
+    transition: transform 0.3s ease; /* Animation effect */
+}
+
+.animated-gradient-underline:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+}
+
+
 
   .event-category {
     margin: 20px 0;
   }
 
   .event-category h2 {
-    color: #555;
+    color: #000000;
+    margin-bottom: 2rem;
   }
 
   .event-card {
