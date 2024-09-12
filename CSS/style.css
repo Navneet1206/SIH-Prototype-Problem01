@@ -506,6 +506,7 @@ footer {
 
 .footer-content h2 {
   font-family: 'Poppins', sans-serif;
+  line-height: 2.5rem;
   color: var(--accent-clr);
   margin-bottom: 10px;
 }
