@@ -132,5 +132,12 @@
       margin-left: 0;
       margin-top: 1rem;
     }
+    .social-links{
+      display: grid;
+      gap: 1rem;
+    }
+    .social-links a{
+      align-items: center;
+    }
   }
   
