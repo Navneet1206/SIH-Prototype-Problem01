@@ -286,6 +286,40 @@ main p{
       }
     }
   }
+  /* ======================Animation==================== */
+.animateX{
+  animation: user_defined 1.2s ease-in-out reverse;
+
+}
+@keyframes user_defined{
+  0%{
+   opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    transform: translateY(10%);
+  }
+}
+.animateY{
+  animation: user_defi 1.2s ease-in-out alternate-reverse;
+
+}
+@keyframes user_defi{
+  0%{
+    
+    opacity: 1;
+   
+  }
+
+  100%{
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+}
+
+/* ===================Animation End================= */
+
 }
 
 
