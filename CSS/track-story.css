@@ -10,7 +10,7 @@
     font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
     color: #333;
-    padding: 20px;
+
   }
   
   /* Header styling */
@@ -25,6 +25,7 @@
     font-size: 2rem;
     color: #1016c5;
     font-weight: 600;
+    
   }
   
   /* Input styling */
@@ -91,6 +92,11 @@
     line-height: 1.5;
   }
   
+  @media (max-width: 800px){
+    .site-name{
+      line-height: 3rem;
+    }
+  }
   
   /* Mobile adjustments */
   @media (max-width: 600px) {
